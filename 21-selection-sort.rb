@@ -2,7 +2,18 @@
 # https://zh.wikipedia.org/wiki/选择排序
 
 def selection_sort(arr)
-  #...
+  i = 0 # array的第一個元素
+  while i < ( arr.size - 1 ) # i 最多為array的倒數第二個元素（i走訪到倒數第二個元素）
+    j = i + 1
+    while j < arr.size # j 最多為array的最後一個元素（j走訪到最後一個元素）
+      if arr[i] > arr[j]
+        arr[i], arr[j] = arr[j], arr[i] # 交換數值
+      end
+      j += 1
+    end
+    i += 1
+  end
+  arr
 end
 
 arr =  [7, 68, 42, 46, 9, 91, 77, 46, 86, 1]
