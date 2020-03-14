@@ -6,8 +6,10 @@ b = 2
 puts "a 是 #{a}"
 puts "b 是 #{b}"
 
-# ...
+print "請交換 a, b 變數的值，a 是 ... "
+a = gets
+print "b 是 ..."
+b = gets
 
 puts "a 应该是 2，现在是 #{a}"
 puts "b 应该是 1，现在是 #{b}"
-
